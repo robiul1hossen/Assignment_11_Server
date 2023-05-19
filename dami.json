@@ -1,0 +1,95 @@
+[
+  {
+    "category": "Super Racer",
+    "price": 24.99,
+    "img": "https://i.ibb.co/vqJ3q5S/haseeb-modi-Da-F4-Fo-Y0a-KA-unsplash.jpg",
+    "available_quantity": 15,
+    "subcategory": "Cars",
+    "sellerName": "Rafiq Hasan",
+    "sellerEmail": "carlandtoys@example.com",
+    "rating": 4.2
+  },
+  {
+    "category": "Turbo Speedster",
+    "price": 19.99,
+    "img": "https://i.ibb.co/fXfcWCX/nick-xc-Rt6-KM5s04-unsplash.jpg",
+    "available_quantity": 10,
+    "subcategory": "RC Cars",
+    "sellerName": "Fahim Saleh",
+    "sellerEmail": "speedytoys@example.com",
+    "rating": 3.8
+  },
+  {
+    "category": "Monster Truck",
+    "price": 29.99,
+    "img": "https://i.ibb.co/Z8v7Pr6/gimmel-magaway-h-CIPLW9-Cl-Og-unsplash.jpg",
+    "available_quantity": 8,
+    "subcategory": "Monster Trucks",
+    "sellerName": "Abu Salek",
+    "sellerEmail": "monstertoys@example.com",
+    "rating": 4.5
+  },
+  {
+    "category": "Off-Road Explorer",
+    "price": 31.99,
+    "img": "https://i.ibb.co/vhxjc4H/uday-tadphale-Cw-Mg-Shbz-Brc-unsplash.jpg",
+    "available_quantity": 20,
+    "subcategory": "Off-Road",
+    "sellerName": "Dostogir",
+    "sellerEmail": "adventurewalker@example.com",
+    "rating": 4.9
+  },
+
+  {
+    "category": "Police Pursuit",
+    "price": 29.99,
+    "img": "https://i.ibb.co/2NMbqTJ/haseeb-modi-AU3o-Ye-Ek-W7k-unsplash.jpg",
+    "available_quantity": 5,
+    "subcategory": "Police Cars",
+    "sellerName": "Badsha Harun",
+    "sellerEmail": "citytoys@example.com",
+    "rating": 4.3
+  },
+  {
+    "category": "Drift Racer",
+    "price": 26.99,
+    "img": "https://i.ibb.co/ykYDGTN/chris-king-Vq-Lyo-Rjhiss-unsplash.jpg",
+    "available_quantity": 6,
+    "subcategory": "Drift Cars",
+    "sellerName": "Faruk Hasan",
+    "sellerEmail": "drifttoys@example.com",
+    "rating": 4.0
+  },
+
+  {
+    "category": "Formula Racer",
+    "price": 49.99,
+    "img": "https://i.ibb.co/T1jtGWq/sandy-millar-nu-S2-GDp-CDo-I-unsplash.jpg",
+    "available_quantity": 2,
+    "subcategory": "Formula Cars",
+    "sellerName": "Mr Harun",
+    "sellerEmail": "raceworld@example.com",
+    "rating": 4.6
+  },
+  {
+    "category": "Classic Cruiser",
+    "price": 21.99,
+    "img": "https://i.ibb.co/tYX5Tn8/gustavo-S-W9v-DL5wh-U-unsplash.jpg",
+    "available_quantity": 9,
+    "subcategory": "Classic Cars",
+    "sellerName": "Mr Bai",
+    "sellerEmail": "classictoys@example.com",
+    "rating": 4.4
+  },
+
+  {
+    "category": "Remote Control Boat",
+    "price": 34.99,
+    "img": "https://i.ibb.co/vqJ3q5S/haseeb-modi-Da-F4-Fo-Y0a-KA-unsplash.jpg",
+    "available_quantity": 7,
+    "subcategory": "RC Boats",
+    "sellerName": "Aqua Fun",
+    "sellerEmail": "aquafun@example.com",
+    "rating": 4.2
+  }
+]
