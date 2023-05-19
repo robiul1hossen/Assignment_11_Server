@@ -1,0 +1,40 @@
+{
+  "toys": [
+    {
+      "name": "Toy Car",
+      "price": 19.99,
+      "available_quantity": 8,
+      "category": "Vehicles",
+      "subcategory": "Cars",
+      "seller": {
+        "name": "Carland Toys",
+        "email": "carlandtoys@example.com"
+      },
+      "rating": 4.2
+    },
+    {
+      "name": "Remote Control Car",
+      "price": 39.99,
+      "available_quantity": 5,
+      "category": "Vehicles",
+      "subcategory": "RC Cars",
+      "seller": {
+        "name": "RC Fun",
+        "email": "rcfun@example.com"
+      },
+      "rating": 4.5
+    },
+    {
+      "name": "Race Track Set",
+      "price": 49.99,
+      "available_quantity": 3,
+      "category": "Playsets",
+      "subcategory": "Race Tracks",
+      "seller": {
+        "name": "Race World",
+        "email": "raceworld@example.com"
+      },
+      "rating": 4.0
+    }
+  ]
+}
