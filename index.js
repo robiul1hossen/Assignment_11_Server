@@ -29,6 +29,14 @@ async function run() {
     const toysCollection = client.db("miniMotors").collection("allToys");
 
     app.get("/allToys", async (req, res) => {
+      // if (
+      //   req.params.cat == "monsterTruck" ||
+      //   req.params.cat == "policeCar" ||
+      //   req.params.cat == "classicCar"
+      // ) {
+      //   const result = await toysCollection.find({ subcategory: req.params.cat });
+      //   return res.send(result);
+      // }
       const cursor = toysCollection.find();
       const result = await cursor.toArray();
       res.send(result);
@@ -65,6 +73,20 @@ async function run() {
       }
       const result = await toysCollection.find(query).toArray();
       res.send(result);
+    });
+
+    app.get(`/filter/:cat`, async (req, res) => {
+      console.log(req.params.cat);
+      const result = await toysCollection.find({ subcategory: req.params.cat }).toArray();
+      res.send(result);
+      // if (
+      //   req.params.cat == "monster Truck" ||
+      //   req.params.cat == "Police Car" ||
+      //   req.params.cat == "Classic Car"
+      // ) {
+      //   const result = await toysCollection.find({ subcategory: req.params.cat }).toArray();
+      //   return res.send(result);
+      // }
     });
 
     app.delete("/allToy/:id", async (req, res) => {
