@@ -49,6 +49,8 @@ async function run() {
           rating: 1,
           sellerName: 1,
           sellerEmail: 1,
+          toy_details: 1,
+          seller_details: 1,
         },
       };
 
