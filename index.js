@@ -61,7 +61,6 @@ async function run() {
     app.get("/allToy", async (req, res) => {
       let query = {};
       const prices = req.query.price;
-      console.log(prices);
 
       if (req.query?.sellerEmail) {
         query = { sellerEmail: req.query.sellerEmail };
@@ -75,9 +74,12 @@ async function run() {
       res.send(result);
     });
 
-    app.get(`/filter/:cat`, async (req, res) => {
-      const result = await toysCollection.find({ subcategory: req.params.cat }).toArray();
-      res.send(result);
+    app.get("/filter/:text", async (req, res) => {
+      let query = {};
+      if (req.query.text == "Monster" || req.query.text == "Police" || req.query.text == "Classic") {
+        const result = await toysCollection.find(query, { subcategory: req.query.text }).toArray();
+        return res.send(result);
+      }
     });
 
     app.delete("/allToy/:id", async (req, res) => {
