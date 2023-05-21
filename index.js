@@ -24,7 +24,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
+    // await client.connect();
 
     const toysCollection = client.db("miniMotors").collection("allToys");
 
@@ -65,9 +65,9 @@ async function run() {
         query = { sellerEmail: req.query.sellerEmail };
       }
 
-      const price = req.query.price;
-      if (price && !isNaN(price)) {
-        const result = await toysCollection.find(query).sort({ price: 1 }).toArray();
+      const sort = req.query.sort;
+      if (sort && !isNaN(sort)) {
+        const result = await toysCollection.find(query).sort({ price: sort }).toArray();
         return res.send(result);
       }
 
@@ -115,6 +115,7 @@ async function run() {
       const allToys = req.body;
       console.log(allToys);
       const result = await toysCollection.insertOne(allToys);
+      res.send(result);
     });
 
     // Send a ping to confirm a successful connection
