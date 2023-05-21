@@ -60,23 +60,22 @@ async function run() {
 
     app.get("/allToy", async (req, res) => {
       let query = {};
+      const prices = req.query.price;
+      console.log(prices);
 
       if (req.query?.sellerEmail) {
         query = { sellerEmail: req.query.sellerEmail };
       }
 
-      const sort = req.query.sort;
-      if (sort && !isNaN(sort)) {
-        const result = await toysCollection.find(query).sort({ price: sort }).toArray();
-        return res.send(result);
-      }
+      const options = {
+        sort: { price: prices },
+      };
 
-      const result = await toysCollection.find(query).toArray();
+      const result = await toysCollection.find(query, options).toArray();
       res.send(result);
     });
 
     app.get(`/filter/:cat`, async (req, res) => {
-      console.log(req.params.cat);
       const result = await toysCollection.find({ subcategory: req.params.cat }).toArray();
       res.send(result);
     });
@@ -113,7 +112,6 @@ async function run() {
 
     app.post("/allToys", async (req, res) => {
       const allToys = req.body;
-      console.log(allToys);
       const result = await toysCollection.insertOne(allToys);
       res.send(result);
     });
